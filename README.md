@@ -2,7 +2,10 @@
 
 Брал пример с них 
 https://www.youtube.com/embed/EVze4Cq-dZ8
+
 https://youtu.be/w_nlN9Csjns
+
+https://youtu.be/C2NYb3EWFjk
 
 Алгоритм рандомного числа
 
