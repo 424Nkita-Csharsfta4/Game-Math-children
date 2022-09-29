@@ -208,3 +208,11 @@ h1 {
         display: none;
     }
 }
+
+.pause {
+	margin-left: 1em;
+	cursor:pointer;
+    width: 10px;
+    height: 5px;
+    
+}

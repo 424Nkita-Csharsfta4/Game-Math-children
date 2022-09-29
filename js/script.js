@@ -23,7 +23,7 @@ document.querySelector("#startreset").onclick = () =>//Стрелочная фу
         //Переменая с обратным счетам
         showElement("timeremaining");
         //Выставление лимита по времни
-        timeRemaining = 30;
+        timeRemaining = 60;
         //отсчет в секундах
         document.querySelector("#timeremainingvalue").innerHTML = timeRemaining;
         //Проигрыш
@@ -89,7 +89,7 @@ function startCountdown()
             //показать игру за коробкой
             showElement("gameOver");
             //показать игру поверх сообщения и набрать очки
-            document.querySelector("#gameOver").innerHTML = "<p>Ты проиграл</p><p>Твой счет: " + score + ".</p>";
+            document.querySelector("#gameOver").innerHTML = "<p>Время вышло</p><p>Твой счет: " + score + ".</p>";
             //скрыть обратный отсчет
             hideElement("timeremaining");
             //Убрать правильный ответ
@@ -128,13 +128,13 @@ function showElement(Id)
 //////////////////////////M////////////
 function generateQA()
 {
-    //генирация чисел от  1-9
+    //генирация чисел от  1-10
     var x = 1 + Math.round(9 * Math.random());
     var y = 1 + Math.round(9 * Math.random());
     //правильный ответ
-    correctAnswer = x * y;
+    correctAnswer = x + y;
     //Постановка вопроса
-    document.querySelector("#question").innerHTML = x + " x " + y;
+    document.querySelector("#question").innerHTML = x + " + " + y;
     //установка случайной позиции для правильного ответа
     var correctPosition = 1 + Math.round(3 * Math.random());
     document.querySelector("#box" + correctPosition).innerHTML = correctAnswer;
@@ -162,3 +162,4 @@ console.log(timeRemaining);
 console.log(score);
 console.log(correctAnswer);
 console.log(startreset);
+
